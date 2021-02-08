@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacte vous dan la voutre cafe">
+    <link rel="stylesheet" href="css/application.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/dialog.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/019cb3d00c.js" crossorigin="anonymous"></script>
+    <title>Contact Us | Mr Coffee</title>
+</head>
+<body>
+    <header>
+        <nav>  
+          <img class="coffee_logo" src="Assets/full_logo_white.png" alt="white coffee logo">
+        
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Qui sommes-nous?</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="home_wrapper" id="blur_background">
+        <img class="mrcoffee_logo" src="Assets/logo_mrcoffee.png" alt="Mr Coffee Logo">
+
+        <div class="form_wrapper">
+            <h1>Dites nous tout !</h1>
+
+             <form id="contact_form">
+                <div class="form_container">
+                    <label for="lname">Nom<span>*</span></label>
+                    <input type="text" id="lname" name="lname" onkeyup="requireValue()" required/>
+                    <i class="fas fa-check-circle"></i>
+			        <i class="fas fa-exclamation-circle"></i>
+                    <p id="error_Message"><small>Error Message</small></p>
+                </div>
+
+                <div class="form_container">
+                    <label for="fname">Prénom<span>*</span></label>
+                    <input type="text" id="fname" name="fname" onkeyup="requireValue()" required/>
+                    <i class="fas fa-check-circle"></i>
+			        <i class="fas fa-exclamation-circle"></i>
+                    <p id="error_Message"><small>Error Message</small></p>
+                </div>
+
+                <div class="form_container">
+                    <label for="phone">Téléphone</label>
+                    <input type="text" id="phone" name="phone" onkeyup="requireValue()"/>
+                    <i class="fas fa-check-circle"></i>
+			        <i class="fas fa-exclamation-circle"></i>
+                    <p id="error_Message"><small>Error Message</small></p>
+                </div>
+
+                <div class="form_container" >
+                    <label for="email">Adresse mail<span>*</span></label>
+                    <input type="text" id="email" name="email" onkeyup="requireValue()" required/>
+                    <i class="fas fa-check-circle"></i>
+			        <i class="fas fa-exclamation-circle"></i>
+                    <p id="error_Message"><small>Error Message</small></p>
+                </div>
+
+                <div class="form_container">
+                    <label for="text">Message<span>*</span></label>
+                    <textarea id="text" name="text" placeholder="Tapez votre message ici" rows="5" cols="5" onkeyup="requireValue()" required></textarea>
+                    <i class="fas fa-check-circle"></i>
+			        <i class="fas fa-exclamation-circle"></i>
+                    <p id="error_Message"><small>Error Message</small></p>
+                </div>
+            
+                <button id="send_button" type="submit">ENVOYER</button>
+            </form>
+        </div>
+
+        <dialog class="dialog_box">
+                <div>
+                    <img class="coffee_logotwo" src="Assets/logo_dark.png">
+                    <div class="model_message">
+                        <h2>MERCI<br>Votre message a bien été envoyé !</h2>
+                    </div>
+                </div>
+            
+                <p><b>Nous essaierons d’y répondre au mieux dans les plus brefs</b>
+                <b>délais. À bientot chez Mr.Coffee</b></p>
+                <button id="close_button" type="submit">FERMER</button> 
+        </dialog>
+    
+        <h2>On vous attend !</h2>
+        
+        <section class="contact_section">
+            <p><b>Mr.Coffee</b></p>
+            <p>15 place Jules Guesde</p>
+        </section>
+
+        <section class="contact_section">
+            <p>75006 Paris</p>
+            <p>Tel : +33 9 46 25 78 45</p>
+            <p>Mail : contact@mr-coffee.com</p>
+        </section>
+
+        <img class="map_image" src="Assets/carte_contact.png" alt="map">
+    </div>
+    <footer>
+        <img class="coffee_logotwo"  src="Assets/logo_blanc.png" alt="coffee logo">
+        <div>
+            <p>Suivez nous sur les réseaux sociaux!</p>
+            <ul>
+                <li><img src="Assets/logo_linkedin.png" alt= "LinkedIn"></li>
+                <li><img src="Assets/logo_twitter.png" alt= "Twitter"></li>
+                <li><img src="Assets/logo_facebook.png" alt= "Facebook"></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src=form4.js></script>
+</body>
+</html>

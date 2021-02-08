@@ -1,0 +1,488 @@
+* {
+    margin: 0; 
+    border: 0; 
+    box-sizing: border-box; 
+    font-family: 'Nunito', sans-serif;
+ 
+}
+
+h1 { 
+    font-size: 3em;
+
+}
+
+h3 {
+    font-size: 2em;
+
+}
+
+h2 {
+    font-size: 2.5em;
+
+}
+
+h4 {
+    font-size: 2em;
+
+}
+
+/*  NAVIGATION */
+
+nav {
+    background-color: #6A7B8B;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    font-family: 'Archivo', sans-serif;
+
+}
+
+nav a:active {
+    background-color:rgb(106, 123, 139, 35%);
+
+}
+
+.coffee_logo {
+    width: 157px;
+    height: 56px;
+    margin: 10px 0 10px 30px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; 
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+nav li {
+    display: flex;
+    min-width: 180px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* FOOTER */
+
+.coffee_logotwo {
+    width: 53px;
+    height: 78px;
+    margin: 30px;
+    
+}
+
+footer {
+    background-color: #6A7B8B;
+    display: flex;
+    
+}
+
+footer div {
+    font-size: 16px;
+    color: white;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 30px;
+    margin-right: 10%;
+
+}   
+
+footer div ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    padding-right: 5%;
+    padding: 0;  
+    
+}
+
+footer div ul img {
+    width: 30px;
+    margin: 20px 30px;
+    
+}
+
+footer image {
+    display: flex;
+
+}
+
+
+/* HOME PAGE */
+
+.home_wrapper {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 100px auto;
+    color: #5C5B5B;
+
+}
+
+.coffee_logo {
+    width: 150px;
+    height: 56px;
+    padding: 10px;
+
+}
+
+.mrcoffee_logo {
+    width: 207px;
+    height: 207px;
+
+}
+
+.hallof_mrcoffee {
+    width: 98%;
+    margin-bottom: 70px;
+
+}
+
+.intro_container {
+    position: relative;
+
+}
+
+.h1_intro {
+    color:#FFFFFF;
+    text-shadow: 0px 4px 8px  #000000;
+    line-height: 55px;
+    position:  absolute;
+    top: 100px;
+    width: 100%;
+    font-size: 2.5em;
+
+}
+
+.small_image {
+    width: 25%;
+    margin: 45px;
+
+}
+
+.sectionsmall_container{
+    display: flex;
+    margin: 70px auto;
+
+}
+
+.sectionsmall_image{
+    line-height: 25px;
+    font-weight: bold;
+    width: 33.33%;
+    background-color: #6A7B8B;
+    box-shadow: 0px 2px 4px #000000;
+    font-size: 1rem;
+    margin: 15px;
+    color:#FFFFFF;
+    line-height: 1.7em;
+
+}
+
+.sectionsmall_image p {
+    padding: 10px;
+    margin: 20px;
+
+}
+
+button {
+    width: 332px;
+    height: 77px;
+    background-color: #6A7B8B;
+    border: none;
+    color: white;
+    box-shadow: 0 2px 4px #000000 ;  
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0 auto 90px auto;
+    cursor: pointer;
+
+}
+
+
+.open_container {
+    display: flex;
+    align-items: center;
+
+}
+
+.open_container img {
+    width: 15%;
+    padding: 20px;
+
+}
+
+.open_container h3 {
+    padding-top: 5%;
+
+}
+
+.hour_wrapper {
+    display: flex;
+}
+
+.hour_container {
+    display: flex;
+    margin: 70px 0;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.hour_section {
+    line-height: 1.5em;
+    font-size: 1.7em;
+    margin: 20px;
+
+}
+
+.ending_container p{
+    margin: 50px;
+    font-size: 1.5em;
+
+}
+
+
+/* ABOUT PAGE */
+.image_about {
+    width: 30%;
+
+}
+
+.image_about1 {
+    width: 30%;
+
+}
+
+.about_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+
+}
+
+.about_text {
+    text-align: left;
+    width: 50%;
+
+}
+
+.about_text h2 {
+    font-size: 2.5rem;
+    padding: 0;
+
+}
+
+.about_text p {
+    margin: 20px 0 20px 0;
+    font-size: 1.5rem;
+
+}
+
+
+/* CONTACT PAGE*/
+
+.map_image {
+    width: 70%;
+    margin-top: 70px;
+
+}
+
+.contact_section {
+    text-align: left;
+    width: 70%;
+    margin: 30px auto 0 auto;
+    font-size: 20px;
+
+}
+
+
+/* MEDIA QUERIES */
+
+/* tablets */
+@media screen and (max-width: 768px) {
+
+    nav {
+        display: block;
+
+    }
+
+    nav li {
+        min-width: 33.3%;
+        padding: 10px 0;
+        overflow-wrap: break-word;
+
+    }
+
+    .coffee_logo {
+        display: flex;
+        margin: 0 auto;
+        padding: 3px 5px;
+   
+    }
+
+    .sectionsmall_container {
+        flex-direction: column;
+
+    }
+
+    .sectionsmall_image {
+        width: auto;
+
+    }
+
+    .open_container {
+        display: block;
+       
+    }
+
+    .open_container h3 {
+        padding: 0;
+
+    }
+
+    .open_container img {
+        width: 30%;
+
+    }
+
+    .hour_wrapper {
+        display: block;
+    
+    }
+
+    .hour_container {
+        width: 100%;
+        
+    }
+
+    .hour_section {
+        flex-wrap: wrap;
+
+    }
+
+    .about_container {
+        display: block;
+
+    }
+
+    .about_text {
+        width: 100%;
+
+    }
+
+    .image_about {
+        width: 70%;
+        margin: 40px auto;
+
+    }
+
+    .image_about1 {
+        width: 70%;
+        margin: 40px auto;
+
+    }
+
+    .mrcoffee_logo {
+        width: 20%;
+        height: 10%;
+
+    }
+
+}
+
+   
+/* mobile */
+@media screen and (max-width: 480px) {
+
+    .mrcoffee_logo {
+        width: 30%;
+        height: 20%;
+
+    }
+
+    .coffee_logo {
+        width: 25%;
+        height: 15%;
+
+    }
+
+    .h1_intro {
+        font-size: 20px;
+        top: 40px;
+        line-height: 1em;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    footer {
+        display: block;
+
+    }
+    
+    footer div {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .coffee_logotwo {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        width: 10%;
+        height: 10%;
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .contact_section {
+        text-align: center;
+
+    }
+
+    .image_about {
+        width: 100%;
+        
+    }
+
+    .image_about1 {
+        width: 100%;
+    
+    }
+
+    .map_image {
+        width: 100%;
+    
+    }
+
+    button {
+        width: 80%;
+        
+    }
+
+    h1 {
+        font-size: 0.5rem;
+    }
+
+}
