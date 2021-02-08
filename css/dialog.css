@@ -1,0 +1,81 @@
+/* DIALOG */
+
+dialog {
+    background-color: #FCFCFC;
+    overflow: hidden;
+    min-width: 20%;
+    border: 1px solid #979797; 
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    top: 50%;
+    color: #5C5B5B;
+    /* transition: all 2s; */
+    position: absolute;
+    /* transform: translate(0, -10%); */
+    box-shadow: 0 2px 4px #000000 ; 
+    opacity: 0;
+    /* transition: opacity 300ms ease-in-out; */
+
+}
+
+dialog div { 
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    margin: 40px 0 20px 30px;
+
+}
+
+.model_message {
+    margin-top: 35px;
+    padding: 0;
+    font-size: 12px;
+
+}
+
+dialog p {
+    margin-left: 15%;
+    margin-right: 20%;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+#close_button {
+    margin-top: 60px;
+
+}
+
+#close_button:hover {
+    background-color: black;
+    box-shadow: 0 2px 4px #000000 ; 
+    transition: all 1s;
+}
+
+/* TRIGGER  */
+
+.dialog_box.active {
+    opacity:1;
+    top:50%;
+    /* transform:translate(0%,-10%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19); */
+    display: block;
+   
+}
+
+.dialog_box > body {
+    position:relative;
+    opacity: 0;
+}
+
+.dialog_box.active > body {
+    opacity: 1;
+
+}
+
+
+
+
+
+
